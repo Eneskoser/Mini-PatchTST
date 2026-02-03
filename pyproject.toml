@@ -1,0 +1,13 @@
+[project]
+name = "MiniPatchTST"
+version = "0.1.0"
+description = "MiniPatchTST"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.2.6",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.7.2",
+    "torch>=2.10.0",
+    "utilsforecast>=0.2.15",
+]
