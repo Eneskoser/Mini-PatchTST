@@ -245,7 +245,7 @@ def run_config(
     all_preds = torch.cat(all_preds, dim=0).numpy()
 
     pred_inv = y_scaler.inverse_transform(all_preds.flatten().reshape(-1, 1)).clip(0, np.inf)
-    y_true_inv = y_scaler.inverse_transform(y_val.flatten().reshape(-1, 1))
+    y_true_inv = y_scaler.inverse_transform(y_test.flatten().reshape(-1, 1))
     pred_inv = pred_inv.flatten()
     y_true_inv = y_true_inv.flatten()
 
